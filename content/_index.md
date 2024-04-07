@@ -1,25 +1,39 @@
 ---
-title : "Start with Amazon Simple Email Service"
+title : "Setting up remote access to VPC Resources"
 date : "`r Sys.Date()`"
 weight : 1
 chapter : false
 ---
 
-# Start with Amazon Simple Email Service
+# Setting up remote access to VPC Resources
 
-#### Overview
+### Overview
+This workshop is designed to learn how you can access resources in your VPC privately without having to deploy an internet gateway and connect your resources to the internet. In each module, the workshop provides a different connectivity options like AWS Verified Access, Amazon EC2 Instance Connect endpoint and AWS Client VPN to access resources inside your VPC. You are encouraged to execute these tasks on your own. The workshop also provides instructions to guide you through each of the tasks, as a reference.
+![VPC](images/vpc.png?featherlight=false&width=10pc)
 
-In this workshop, you will learn how to set up and use Amazon Simple Email Service (SES) to send secure and successful emails. You will learn how to configure SES settings, send personalized emails, manage email sending, use advanced features, secure emails, and troubleshoot common issues. The workshop will provide a scenario-based approach to help you understand how to use SES in real-life situations.
+### Learning Objectives
+In this workshop, you will learn how to create, configure, and test three different types of remote connectivity options to access your VPC resources.
+1. Remote connectivity using AWS Verified Access.
+2. Remote connectivity using Amazon EC2 Instance Connect endpoints.
+3. Remote connectivity using AWS Client VPN.
 
-![SES](../hugo-ses/images/1/serviceicon.png?featherlight=false&width=10pc)
+### Outcome
+Upon completion of this workshop, you will:
 
-#### Content
+1. **Utilize AWS Verified Access**: Gain the knowledge to use AWS Verified Access to grant secure access to internal web applications.
+2. **Enable SSH Connections**: Learn how to utilize Amazon EC2 Instance Connect endpoints for secure SSH connections to servers.
+3. **Master AWS Client VPN**: Acquire the skills to configure and utilize AWS Client VPN, enabling network-level access for remote users.
+4. **Apply Practical Knowledge**: Obtain hands-on experience and real-world use cases for each service, ensuring you're prepared to apply your skills in practical scenarios.
 
-1. [Introduction to SES](1-introduce/)
-2. [Creating and Verifying Email and Domain Identities](2-firewallinvpc/)
-3. [Sending Emails Using Amazon SES](3-prerequiste/)
-4. [Managing your Amazon SES environment using Configuration Sets](4-createec2server/)
-5. [Lists & Subscription Management](5-vpnsitetosite/)
-6. [Email Templates and Personalization](5-vpnsitetosite/)
-7. [Capstone Project](5-vpnsitetosite/)
-8. [Resource Cleanup](6-cleanup/)
+### Workshop Duration
+The workshop will require one and half hour to complete. Depending on your experience with AWS networking, the duration to complete may vary.
+
+![Diagram](images/diagram.png?featherlight=false&width=70pc)
+
+### Content
+
+1. [Getting Started](1-GettingStarted/)
+2. [**Lab 1**: Connect to an internal web application using AWS Verified Access](2-UsingAWSVerifiedAccess/)
+3. [**Lab 2**: Connect to an Amazon EC2 instance using Amazon EC2 Instance Connect Endpoint](3-UsingAWSClientVPN/)
+4. [**Lab 3**: Connect to VPC resources using AWS Client VPN with Mutual authentication (certificate-based)](4-UsingEC2ConnectEndpoint/)
+5. [Summary](5-Summary/)
