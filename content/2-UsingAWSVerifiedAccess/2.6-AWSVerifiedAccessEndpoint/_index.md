@@ -3,7 +3,7 @@ title : "Domain Identities"
 date :  "`r Sys.Date()`" 
 weight : 6
 chapter : false
-pre : " <b> 2.2 </b> "
+pre : " <b> 2.7 </b> "
 ---
 
 {{% notice note %}}
